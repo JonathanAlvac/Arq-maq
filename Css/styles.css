@@ -1,3 +1,13 @@
+:root {
+    --blanco: #FFF;
+    --negro: #111111;
+    --gris: #343A40;
+
+    --fuentePrincipal: 'Raleway', sanserif;
+}
+
+/*Globales*/
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -11,10 +21,64 @@ html {
 
 body {
     font-size: 1.6rem;
-    line-height: 1.5;
+    font-family: var(--fuentePrincipal);
+    line-height: 1.8;
 }
 
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    margin: 1rem 0 4rem 0;
+}
 
-body{
-    background-color: red;
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 5.8rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.btn{
+    color: var(--gris);
+    background-color: var(--blanco);
+    border: .1rem solid var(--gris);
+    padding: .5rem 2rem;
+    transition: background-color .3s;
+}
+
+.btn:hover{
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+
+/*Utilidades*/
+
+.text-center{
+    text-align: center;
+}
+
+.mt-5{
+    margin-top: 5rem;
 }
